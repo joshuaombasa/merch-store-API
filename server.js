@@ -1,10 +1,11 @@
 const express = require('express')
 const port = 3000
+const app = express()
 const cors = require('cors')
 
 app.use(express.json())
 
-const app = express()
+
 
 const ordersRoutes = require('./routes/orders')
 const loginRoutes = require('./routes/login')
